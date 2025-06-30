@@ -6,7 +6,7 @@ class ProfileCardAddData extends StatelessWidget {
   final phoneController = TextEditingController();
   final occupationController = TextEditingController();
 
-  final profileCardController = Get.put(ProfileCardController());
+  ProfileCardController profileCardController = Get.put(ProfileCardController());
 
 
   ProfileCardAddData({super.key});

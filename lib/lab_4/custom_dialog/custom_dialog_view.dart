@@ -1,5 +1,3 @@
-import 'package:adv_flutter_labs/lab_4/custom_dialog/custom_dialog_controller.dart';
-
 import '../../import_export.dart';
 
 class CustomDialogView extends StatelessWidget {

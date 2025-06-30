@@ -1,16 +1,35 @@
 import 'package:adv_flutter_labs/import_export.dart';
-import 'package:adv_flutter_labs/lab_2/e_commerce/flipcart_view.dart';
-import 'package:adv_flutter_labs/lab_4/dialog_getx/dialog_view.dart';
-import 'package:adv_flutter_labs/lab_5/navigate_one_to_other_screen.dart';
-import 'package:adv_flutter_labs/lab_5/pass_data_between_ont_to_other_screen/second_screen.dart';
-import 'package:flutter/material.dart';
-import 'package:adv_flutter_labs/LAB_2/First_FavOrUnFavWithStaticList.dart';
-import 'package:adv_flutter_labs/LAB_2/Second_SignUpForm.dart';
-import 'LAB_2/Profile_Card/profile_card_add_data.dart';
-import 'lab_3/crud_mvc/add_user_page.dart';
-import 'lab_3/crud_mvc/user_list_view.dart';
-import 'lab_4/custom_dialog/custom_dialog_view.dart';
-import 'lab_5/pass_data_between_ont_to_other_screen/first_screen.dart';
+
+void main(){
+  runApp(GetMaterialApp(
+    home: ProfileCardAddData(),
+  ));
+}
+
+
+// void main(){
+//   runApp(GetMaterialApp(
+//     debugShowCheckedModeBanner: false,
+//     initialRoute: NAV_USER_LISTVIEW_PAGE,
+//     getPages: [
+//       GetPage(name: NAV_USER_LISTVIEW_PAGE, page: () => StuListView()),
+//       GetPage(name: NAV_USER_ADD_EDIT_PAGE, page: () => StuAddEditPage())
+//     ],
+//   ));
+// }
+
+// void main() {
+//   runApp(GetMaterialApp(
+//     debugShowCheckedModeBanner: false,
+//     // home: HomeScreenNonReactive(),
+//     // home: TimerCountDownScreen(),
+//     // home: ToggleScreen(),
+//     // home: RxListView(),
+//     // home: FavView(),
+//     // home: RxListViewPageAddDlt(),
+//     home: CrudRxListView(),
+//   ));
+// }
 
 // void main() {
 //   runApp(GetMaterialApp(
@@ -22,16 +41,35 @@ import 'lab_5/pass_data_between_ont_to_other_screen/first_screen.dart';
 //     ],
 //   ));
 // }
-void main(){
-  runApp(GetMaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: ProfileCardView(),
-  ));
-}
-
 // void main() {
-//   runApp(MaterialApp());
+//   var name;
+//   runApp(
+//     GetMaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Page1(),
+//       getPages: [
+//         GetPage(
+//           name: '/second',
+//           page: () => Page2(),
+//           transition: Transition.zoom,
+//           transitionDuration: Duration(milliseconds: 600),
+//         ),
+//       ],
+//     ),
+//   );
 // }
+
+// void main(){
+//   runApp(GetMaterialApp(
+//     initialRoute: '/home',
+//     getPages: [
+//       GetPage(name: '/login', page: () => LoginScreen()),
+//       GetPage(name: '/home', page: () => HomeScreen(),
+//       middlewares: [UserMiddleware()]),
+//     ],
+//   ));
+// }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -44,14 +82,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      debugShowCheckedModeBanner: false,
       // home: SignUpForm(),
       // home: FavUnFavWithStaticList(),
-      // home: ProfileCardAddData(),
+      home: ProfileCardAddData(),
       // home: UserListView(),
       // home: MainPage(),
       // home: FlipkartView(),
       // home: DialogView(),
+      // home: StudentView(),
     );
   }
 }

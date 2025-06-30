@@ -3,8 +3,7 @@ import '../../import_export.dart';
 class ProfileCardView extends StatelessWidget {
   ProfileCardView({super.key});
 
-  final profileCardController = Get.find<ProfileCardController>();
-
+  ProfileCardController profileCardController = Get.find();
 
   @override
   Widget build(BuildContext context) {
@@ -35,14 +34,17 @@ class ProfileCardView extends StatelessWidget {
                     profileCardController.name.value,
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
+                  SizedBox(height: 10,),
                   Text(
                     profileCardController.email.value,
                     style: TextStyle(color: Colors.grey[700]),
                   ),
+                  SizedBox(height: 10,),
                   Text(
                     profileCardController.phone.value,
                     style: TextStyle(fontSize: 18),
                   ),
+                  SizedBox(height: 10,),
                   Text(
                     profileCardController.occupation.value,
                     style: TextStyle(fontSize: 20),
