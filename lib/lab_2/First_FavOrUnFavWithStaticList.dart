@@ -22,7 +22,7 @@ class _FavUnFavWithStaticListState extends State<FavUnFavWithStaticList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Favourite || Unfavourite"),
+        title: Text("Favourite/UnFavourite using static list"),
         centerTitle: true,
       ),
       body: ListView.builder(
