@@ -33,16 +33,22 @@ class _FavUnFavWithStaticListState extends State<FavUnFavWithStaticList> {
             margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             elevation: 4,
             child: ListTile(
-              title: Text(item['name'], style: TextStyle(fontWeight: FontWeight.bold)),
-              subtitle: Text("Roll No: ${item['rollNo'].toString()}"),
-              trailing: IconButton(onPressed: () {
-                setState(() {
-                  favList[index]['isFav'] =! favList[index]['isFav'];
-                });
-              }, icon: Icon(
-                item['isFav'] ? Icons.favorite : Icons.favorite_border,
-                color: item['isFav'] ? Colors.cyan : Colors.grey,
-              ),),
+              title: Text(
+                item['name'],
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              subtitle: Text("Roll No: ${item['rollNo']}"),
+              trailing: IconButton(
+                onPressed: () {
+                  setState(() {
+                    favList[index]['isFav'] = !favList[index]['isFav'];
+                  });
+                },
+                icon: Icon(
+                  item['isFav'] ? Icons.favorite : Icons.favorite_border,
+                  color: item['isFav'] ? Colors.lightGreen : Colors.grey,
+                ),
+              ),
             ),
           );
         },

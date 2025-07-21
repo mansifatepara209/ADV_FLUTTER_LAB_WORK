@@ -81,7 +81,6 @@ class _UserListViewState extends State<UserListView> {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(content: Text('User Deleted!')),
                               );
-
                               setState(() {});
                               print("User deleted!");
                             },

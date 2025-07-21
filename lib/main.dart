@@ -1,20 +1,27 @@
 import 'package:adv_flutter_labs/import_export.dart';
 
-void main(){
-  runApp(GetMaterialApp(
-    home: ProfileCardAddData(),
-  ));
+void main() {
+  Get.put(StuController());
+  runApp(
+    GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: NAV_STU_LIST_VIEW,
+      getPages: [
+        GetPage(name: NAV_STU_LIST_VIEW, page: () => StuListView()),
+        GetPage(name: NAV_STU_ADD_EDIT_PAGE, page: () => StuAddEditPage()),
+      ],
+    ),
+  );
 }
-
 
 // void main(){
 //   runApp(GetMaterialApp(
-//     debugShowCheckedModeBanner: false,
-//     initialRoute: NAV_USER_LISTVIEW_PAGE,
-//     getPages: [
-//       GetPage(name: NAV_USER_LISTVIEW_PAGE, page: () => StuListView()),
-//       GetPage(name: NAV_USER_ADD_EDIT_PAGE, page: () => StuAddEditPage())
-//     ],
+//     home: ProfileCardAddData(),
+//   ));
+
+// void main(){
+//   runApp(GetMaterialApp(
+//     home: DialogView(),
 //   ));
 // }
 
@@ -27,7 +34,7 @@ void main(){
 //     // home: RxListView(),
 //     // home: FavView(),
 //     // home: RxListViewPageAddDlt(),
-//     home: CrudRxListView(),
+//     // home: CrudRxListView(),
 //   ));
 // }
 
@@ -41,6 +48,7 @@ void main(){
 //     ],
 //   ));
 // }
+
 // void main() {
 //   var name;
 //   runApp(
@@ -70,7 +78,6 @@ void main(){
 //   ));
 // }
 
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -84,7 +91,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: SignUpForm(),
       // home: FavUnFavWithStaticList(),
-      home: ProfileCardAddData(),
+      // home: ProfileCardAddData(),
       // home: UserListView(),
       // home: MainPage(),
       // home: FlipkartView(),

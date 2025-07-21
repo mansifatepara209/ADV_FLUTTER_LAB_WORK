@@ -44,3 +44,4 @@ export 'package:adv_flutter_labs/lab_9/student_module/stu_model.dart';
 export 'package:adv_flutter_labs/lab_9/student_module/stu_controller.dart';
 export 'package:adv_flutter_labs/lab_9/student_module/stu_add_edit_page.dart';
 export 'lab_9/student_module/stu_list_view.dart';
+export 'package:adv_flutter_labs/lab_11/fetch_display_data_from_api/category_model.dart';

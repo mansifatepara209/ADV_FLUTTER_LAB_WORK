@@ -9,8 +9,14 @@ const String CITY = 'City';
 //region DATABASE VARIABLES
 const String DB_NAME = 'Student.db';
 const String TBL_STUDENT = 'TBL_Student';
-const String COL_STU_ID = 'StuID';
-const String COL_STU_NAME = 'StuName';
+const String COL_STU_ID = 'stuID';
+const String COL_STU_NAME = 'stuName';
+const String COL_ENROLLMENT_NO = 'enrollmentNo';
+const String COL_EMAIL = 'email';
+const String COL_PHONENUMBER = 'phoneNumber';
+const String COL_BRANCH = 'branch';
+const String COL_CGPA = 'cgpa';
+const String COL_12TH_GRADE = 'grade12';
 //endregion
 
 
@@ -30,6 +36,7 @@ const String BTN_SAVE = 'Submit';
 const String BTN_DELETE = 'Delete';
 const String BTN_YES = 'Yes';
 const String BTN_NO = 'No';
+const String BTN_UPDATE = 'Update';
 //endregion
 
 //region KEY VALUE PAIR VARIABLE
@@ -46,4 +53,6 @@ const String CMN_GETX_DIALOG_MSG = 'Hello This is Default GETX Dialog';
 //region NAVIGATION PAGES
 const String NAV_USER_LISTVIEW_PAGE = '/UserListViewPage';
 const String NAV_USER_ADD_EDIT_PAGE = '/UserAddEditPage';
+const String NAV_STU_ADD_EDIT_PAGE = '/StuAddEditPage';
+const String NAV_STU_LIST_VIEW = '/StuListView';
 //endregion

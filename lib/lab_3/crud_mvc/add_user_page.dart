@@ -55,7 +55,7 @@ class _AddUserPageState extends State<AddUserPage> {
                 if(widget.user!=null && widget.index!=null){
                   widget.user[NAME] = _nameController.text.toString();
                   widget.user[EMAIL] = _emailController.text.toString();
-                  UserListView.userListController.updateUserInList(widget.user,widget.index);
+                  UserListView.userListController.updateUserInList(widget.index,widget.user);
                 }
                 else{
                   Map<String, dynamic> newUser = {};
